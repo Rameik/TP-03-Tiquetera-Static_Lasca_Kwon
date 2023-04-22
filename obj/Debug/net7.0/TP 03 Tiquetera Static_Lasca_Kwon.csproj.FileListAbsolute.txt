@@ -1,0 +1,15 @@
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\bin\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.exe
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\bin\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.deps.json
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\bin\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.runtimeconfig.json
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\bin\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.dll
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\bin\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.pdb
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\obj\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.csproj.AssemblyReference.cache
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\obj\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\obj\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.AssemblyInfoInputs.cache
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\obj\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.AssemblyInfo.cs
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\obj\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.csproj.CoreCompileInputs.cache
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\obj\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.dll
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\obj\Debug\net7.0\refint\TP 03 Tiquetera Static_Lasca_Kwon.dll
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\obj\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.pdb
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\obj\Debug\net7.0\TP 03 Tiquetera Static_Lasca_Kwon.genruntimeconfig.cache
+C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP 03 Tiquetera Static_Lasca_Kwon\obj\Debug\net7.0\ref\TP 03 Tiquetera Static_Lasca_Kwon.dll
