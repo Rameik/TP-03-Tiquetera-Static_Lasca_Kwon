@@ -72,7 +72,7 @@ return nuevoCliente;
 void obtenerEstadisticas(){
 
 List<string> listaEstadisticas = Ticketera.estadisticasTicketera();
-
+if(listaEstadisticas.Count==0) Console.WriteLine("Aún no se anotó nadie");
 foreach (string item in listaEstadisticas)
 {
     Console.WriteLine(item);
@@ -98,8 +98,8 @@ else{
 void cambiarEntradaCliente(){
 
 int idEntrada = Funciones.IngresarEntero("Ingrese el ID del cliente que quiere buscar y cambiar su tipo de entrada: ");
-int tipo = 0;
 int total = 0;
+int tipo = 0;
 
 bool pudo = Ticketera.cambiarEntrada(idEntrada, tipo, total);
 

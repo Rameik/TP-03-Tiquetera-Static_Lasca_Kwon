@@ -39,7 +39,7 @@ return clienteBuscado;
 
 public static bool cambiarEntrada(int idEntrada, int tipo, int total){
 int[] importes = {15000, 30000, 10000, 40000};
-bool pudo = false;
+bool pudo = false, encontro = false;
 int viejoTipo;
 int viejoTotal = 0;
 foreach (var clave in dicClientes)
@@ -47,23 +47,30 @@ foreach (var clave in dicClientes)
     viejoTipo = clave.Value.tipoEntrada;
     viejoTotal = clave.Value.totalAbonado;
 }
-
-do{
-tipo = Funciones.IngresarEntero("Ingrese su nuevo tipo de entrada (el importe del nuevo tipo de entrada tiene que ser superior al que había comprado anteriormente): ");
-total = importes[tipo - 1];
-Console.WriteLine("Su nuevo total es de: " + total);
-} while(total <= viejoTotal);
-
 foreach (var clave in dicClientes)
 {
     if(clave.Key == idEntrada){
+        encontro = true;
+    }
+}
+if(encontro == false) Console.WriteLine("No se pudo hacer el cambio debido a que no se encontro el ID");
+else{
+    tipo = Funciones.IngresarEntero("Ingrese su nuevo tipo de entrada (el importe del nuevo tipo de entrada tiene que ser superior al que había comprado anteriormente): ");
+    total = importes[tipo - 1];
+if(total > viejoTotal){
+    Console.WriteLine("Su nuevo total es de: " + total);
+    foreach (var clave in dicClientes)
+    {
+        if(clave.Key == idEntrada){
         pudo = true;
         clave.Value.tipoEntrada = tipo;
         clave.Value.totalAbonado = total;
         clave.Value.fechaInscripcion = DateTime.Today;
+        }
     }
 }
-if(pudo == false) Console.WriteLine("No se pudo hacer el cambio debido a que no se encontro el ID");
+}
+if(pudo == false && encontro == true) Console.WriteLine("No se pudo hacer el cambio debido a que el importe del nuevo tipo de entrada no era superior al que había comprado anteriormente");
 
 return pudo;
 }
@@ -87,15 +94,17 @@ for(int i = 0; i < recaudacion.Length; i++){
     recaudacionTotal += recaudacion[i];
     cantTotal += cantidadEntradasTipos[i];
 }
-listaEstadisticas.Add("Cantidad de clientes inscriptos: " + cantidadClientes);
-for(int i = 0; i < cantidadEntradasTipos.Length; i++){
-    porcentajeEntradas = (cantidadEntradasTipos[i]*100) / cantTotal;
-    listaEstadisticas.Add("Porcentaje de cantidad de entradas vendidas diferenciadas por tipo respecto al total: " + (i+1) + ": " + porcentajeEntradas);
+if(cantTotal > 0){
+    listaEstadisticas.Add("Cantidad de clientes inscriptos: " + cantidadClientes);
+    for(int i = 0; i < cantidadEntradasTipos.Length; i++){
+        porcentajeEntradas = (cantidadEntradasTipos[i]*100) / cantTotal;
+        listaEstadisticas.Add("Porcentaje de cantidad de entradas vendidas diferenciadas por tipo respecto al total: " + (i+1) + ": " + porcentajeEntradas);
+    }
+    for(int i = 0; i < recaudacion.Length; i++){
+        listaEstadisticas.Add("Recaudación de tipo: " + (i + 1)+ ": " + recaudacion[i]);
+    }
+    listaEstadisticas.Add("Recaudación total: " + recaudacionTotal);
 }
-for(int i = 0; i < recaudacion.Length; i++){
-   listaEstadisticas.Add("Recaudación de tipo: " + (i + 1)+ ": " + recaudacion[i]);
-}
-listaEstadisticas.Add("Recaudación total: " + recaudacionTotal);
 
 return listaEstadisticas;
 }
