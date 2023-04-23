@@ -16,7 +16,7 @@ return UltimoIDEntrada;
 
 public static int agregarCliente(Cliente unCliente){
 
-int idEntrada = 0;
+int idEntrada = 1;
 for (int i = 0; i < dicClientes.Count; i++)
 {
     idEntrada += 1;
@@ -55,7 +55,14 @@ foreach (var clave in dicClientes)
 }
 if(encontro == false) Console.WriteLine("No se pudo hacer el cambio debido a que no se encontro el ID");
 else{
-    tipo = Funciones.IngresarEntero("Ingrese su nuevo tipo de entrada (el importe del nuevo tipo de entrada tiene que ser superior al que había comprado anteriormente): ");
+    do{
+    Console.WriteLine("Ingrese su nuevo tipo de entrada entre: (El importe del nuevo tipo de entrada tiene que ser superior al que había comprado anteriormente y debe ingresar solamente el numero de la opcion elegida)");
+    Console.WriteLine("Opción 1 - Día 1, valor a abonar: $15000");
+    Console.WriteLine("Opción 2 - Día 2, valor a abonar: $30000");
+    Console.WriteLine("Opción 3 - Día 3, valor a abonar: $10000");
+    Console.WriteLine("Opción 4 - Full Pass, valor a abonar $40000");
+    int.TryParse(Console.ReadLine(), out tipo);
+    } while(tipo > 4 || tipo <= 0 && tipo == -1);
     total = importes[tipo - 1];
 if(total > viejoTotal){
     Console.WriteLine("Su nuevo total es de: " + total);

@@ -53,15 +53,15 @@ dni = Funciones.IngresarEntero("Ingrese su DNI: ");
 ape = Funciones.IngresarTexto("Ingrese su apellido: ");
 nom = Funciones.IngresarTexto("Ingrese su nombre: ");
 fins = DateTime.Today;
-
+tipo = -1;
 do{
-    Console.WriteLine("Ingrese su tipo de entrada entre:");
-    Console.WriteLine("Opción 1 - Día 1 , valor a abonar: $15000");
+    Console.WriteLine("Ingrese su tipo de entrada entre: (Ingresar solamente el numero de la opcion elegida)");
+    Console.WriteLine("Opción 1 - Día 1, valor a abonar: $15000");
     Console.WriteLine("Opción 2 - Día 2, valor a abonar: $30000");
     Console.WriteLine("Opción 3 - Día 3, valor a abonar: $10000");
     Console.WriteLine("Opción 4 - Full Pass, valor a abonar $40000");
-    tipo = int.Parse(Console.ReadLine());
-} while(tipo > 4 || tipo < 0);
+    int.TryParse(Console.ReadLine(), out tipo);
+} while(tipo > 4 || tipo <= 0 && tipo == -1);
 
 total = importes[tipo - 1];
 
