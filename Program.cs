@@ -52,7 +52,7 @@ Cliente nuevaInscripcion(int[] importes, ref int dni, ref string ape, ref string
 dni = Funciones.IngresarEntero("Ingrese su DNI: ");
 ape = Funciones.IngresarTexto("Ingrese su apellido: ");
 nom = Funciones.IngresarTexto("Ingrese su nombre: ");
-fins = DateTime.Today;
+fins = DateTime.Now;
 tipo = -1;
 do{
     Console.WriteLine("Ingrese su tipo de entrada entre: (Ingresar solamente el numero de la opcion elegida)");

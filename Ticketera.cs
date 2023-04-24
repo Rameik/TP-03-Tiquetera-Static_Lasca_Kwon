@@ -72,7 +72,7 @@ if(total > viejoTotal){
         pudo = true;
         clave.Value.tipoEntrada = tipo;
         clave.Value.totalAbonado = total;
-        clave.Value.fechaInscripcion = DateTime.Today;
+        clave.Value.fechaInscripcion = DateTime.Now;
         }
     }
 }
