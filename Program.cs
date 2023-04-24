@@ -85,10 +85,10 @@ int idEntrada = Funciones.IngresarEntero("Ingrese el ID del cliente que quiere b
 Cliente clienteBuscado = Ticketera.buscarCliente(idEntrada);
 if(clienteBuscado == null) Console.WriteLine("No se encontro el ID de la entrada buscado");
 else{
-
+    Console.WriteLine("DNI: " + clienteBuscado.DNI);
     Console.WriteLine("Nombre: " + clienteBuscado.Nombre);
     Console.WriteLine("Apellido: " + clienteBuscado.Apellido);
-    Console.WriteLine("Fecha de inscripcion: " + clienteBuscado.fechaInscripcion.ToShortDateString());
+    Console.WriteLine("Fecha de inscripcion: " + clienteBuscado.fechaInscripcion);
     Console.WriteLine("Tipo de entrada: " + clienteBuscado.tipoEntrada);
     Console.WriteLine("Total abonado: " + clienteBuscado.totalAbonado);
 }
